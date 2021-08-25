@@ -7,6 +7,10 @@ const connect = function () {
   conn.on("connect", () => {
     console.log('Connected!');
     conn.write('Name: JBL');
+    // setInterval(() => {
+    //   conn.write('Move: up');
+    // }, 100);
+
   });
 
   conn.on('data', (data) => {
