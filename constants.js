@@ -9,10 +9,10 @@ const bindings = {
 };
 
 const messages = {
-  w: 'no touch!!',
-  a: 'sneklol',
-  s: 'nom nom',
-  d: 'slitherin'
+  w: 'Say: no touch!!',
+  a: 'Say: sneklol',
+  s: 'Say: nom nom',
+  d: 'Say: slitherin'
 };
 
 module.exports = { IP, PORT, bindings, messages };
