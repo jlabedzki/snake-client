@@ -1,3 +1,6 @@
+const { connect } = require('./client');
+const { bindings, messages } = require('./constants');
+
 let connection;
 
 const setupInput = (conn) => {
@@ -16,15 +19,9 @@ const handleUserInput = key => {
   for (const binding in bindings) {
     if (key === binding) {
       connection.write(bindings[binding]);
+      connection.write(`Say: ${messages[binding]}`);
     }
   }
-};
-
-const bindings = {
-  w: "Move: up",
-  a: "Move: left",
-  s: "Move: down",
-  d: "Move: right"
 };
 
 module.exports = { setupInput };
