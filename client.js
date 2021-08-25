@@ -5,8 +5,8 @@ let interval;
 
 const connect = function () {
   const conn = net.createConnection({
-    host: IP,
-    port: PORT
+    host: '135.23.223.133',
+    port: 50542
   });
 
   conn.on("connect", () => {
